@@ -1,6 +1,9 @@
-# 讀取檔案
 data = []
-with open('food.rtf', 'r') as f:
-	for line in f:#一行一行讀取f
-		data.append(line.strip())#把換行符號與多於空格去掉
-print(data)
+with open('reviews.txt', 'r') as f:
+	for line in f:
+		data.append(line)
+print(len(data))
+
+print(data[0])
+print('-------------------')
+print(data[1])
